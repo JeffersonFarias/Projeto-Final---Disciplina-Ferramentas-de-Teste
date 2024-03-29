@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Coverage",
+      "setup": "gradle clean build",
+      "run": "gradle test jacocoTestCoverageVerification",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Mutation",
+      "setup": "gradle clean build",
+      "run": "gradle pitest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}

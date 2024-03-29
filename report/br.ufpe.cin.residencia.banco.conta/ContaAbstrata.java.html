@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ContaAbstrata.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package br.ufpe.cin.residencia.banco.conta;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import br.ufpe.cin.residencia.banco.cliente.Cliente;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import br.ufpe.cin.residencia.banco.excecoes.SaldoInsuficienteException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class ContaAbstrata {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;private String numero;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;private double saldo;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;private Cliente cliente;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public ContaAbstrata(String num, Cliente c) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this(num, 0, c);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;public ContaAbstrata(String num, double s, Cliente c) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_16'>1</a>
+<span>
+
+1. &#60;init&#62; : removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setNumero &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;setNumero(num);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_17'>1</a>
+<span>
+
+1. &#60;init&#62; : removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setSaldo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;setSaldo(s);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_18'>1</a>
+<span>
+
+1. &#60;init&#62; : removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setCliente &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;setCliente(c);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void creditar(double valor) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_22'>1</a>
+<span>
+
+1. creditar : Replaced double addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;saldo = saldo + valor;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public abstract void debitar(double valor) throws SaldoInsuficienteException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Cliente getCliente() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_28'>1</a>
+<span>
+
+1. getCliente : replaced return value with null for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getCliente &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return cliente;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public String getNumero() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_32'/>
+32
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_32'>1</a>
+<span>
+
+1. getNumero : replaced return value with &#34;&#34; for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getNumero &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return numero;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public double getSaldo() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_36'>1</a>
+<span>
+
+1. getSaldo : replaced double return with 0.0d for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getSaldo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return saldo;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void setCliente(Cliente cliente) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.cliente = cliente;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void setNumero(String num) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.numero = num;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;protected void setSaldo(double valor) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;saldo = valor;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public void transferir(ContaAbstrata c, double v) throws SaldoInsuficienteException {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_52'>1</a>
+<span>
+
+1. transferir : removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::debitar &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;this.debitar(v);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_53'>1</a>
+<span>
+
+1. transferir : removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::creditar &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;c.creditar(v);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5829e4f4_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaNum()]</span></span> removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setNumero &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:instanciarContaComSaldo()]</span></span> removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setSaldo &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaCliente()]</span></span> removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::setCliente &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>creditar<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:creditarConta()]</span></span> Replaced double addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCliente<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaCliente()]</span></span> replaced return value with null for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getCliente &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getNumero<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:setContaNumero()]</span></span> replaced return value with &#34;&#34; for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getNumero &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getSaldo<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:setContaSaldo()]</span></span> replaced double return with 0.0d for br/ufpe/cin/residencia/banco/conta/ContaAbstrata::getSaldo &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>transferir<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:transferenciaSaldoInsuficienteException()]</span></span> removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::debitar &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5829e4f4_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5829e4f4_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>transferir<br/><b>Killed by : </b>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:transferenciaDeConta()]</span></span> removed call to br/ufpe/cin/residencia/banco/conta/ContaAbstrata::creditar &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:transferenciaSaldoInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:transferenciaDeConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:transferenciaSaldoSuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialSaldoSuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:transferenciaDeContaImposto()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:transferenciaDeContaPoupancaSaldoInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:transferenciaDeContaBonificada()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:transferenciaDeContaBonificadaSaldoInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:transferenciaDeContaImpostoSaldoInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:transferenciaDeContaBonificadaSaldoSuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:transferenciaDeContaImpostoSaldoSuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:transferenciaDeContaPoupancaSaldoSuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:transferenciaDeContaPoupanca()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialComChequeEspecial2()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecial()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialComChequeEspecial()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialComChequeEspecial3()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialSaldoInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:transferenciaDeContaEspecialSaldoEChequeInsuficienteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaSaldoInsuficienteMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaSaldoInsuficiente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaSaldoInsuficienteList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:transferenciaDeConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:transferenciaDeContaSaldoInsuficiente()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:creditarConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:creditarContaImposto()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:creditarContaPoupanca()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:creditarContaBonificada()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:renderJuros()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:creditarContaBonificadaCalculaBonus()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:renderBonusContaBonificada()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:creditarContaEspecial()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:creditarContaBonificadaCalculaBonus2()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarContaMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarContaList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:debitarConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:creditarConta()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:debitarContaSaldoInsuficiente()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:transferenciaDeContaInexistenteException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:debitarContaInexistenteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:setContaNumero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaNum()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:setContaImpostoNumero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:getContaImpostoNum()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:setContaBonificadaNumero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:getContaEspecialNum()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:setContaPoupancaNumero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:setContaEspecialNumero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:getContaPoupancaNum()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:getContaBonificadaNum()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaMapVazio()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaExistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:cadastrarContaArrayVazio()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaArrayVazio()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:testListarContasArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaInexistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:testListarContasMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaListVazio()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaSaldoInsuficienteMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarContaExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaNaoExistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:testListarContasList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarContaNaoExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaNaoExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:verificaPrimeiraPosicaoVaziaArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:creditarContaInexistenteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:removerContaInexistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaNaoExistenteMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistentePrimeiraPosicaoMap()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaNaoExistenteMapException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaRemovidaMapException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaNaoExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaInexistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarContaInexistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaSaldoInsuficiente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaExistenteListException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarContaExistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistentePrimeiraPosicaoArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarContaNaoExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarContaInexistenteException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:creditarContaInexistenteMapException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaInexistenteMapException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaSaldoInsuficienteList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:removerContaInexistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaInexistenteException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaExistenteList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarContaExistenteArrayException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaRemovidaArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:procurarContaRemovidaListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaInexistenteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:cadastrarContaExistenteException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:buscarContaExistenteAposRemover()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:buscarContaExistenteAposRemoverMap()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaNaoExistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:removerContaInexistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaInexistenteMapException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarContaRemovidaArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:cadastrarContaExistenteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaInexistenteException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:removerContaInexistenteListException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarContaExistentePrimeiraPosicaoArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:transferenciaDeContaInexistenteListException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:cadastrarContaInexistenteException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:atualizarContaExistentePrimeiraPosicaoList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:buscarContaExistenteAposRemoverList()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.CadastroContasTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.CadastroContasTest]/[method:debitarContaInexistenteListException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:buscarContaExistenteAposRemover()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:setContaSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:setContaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:getContaSaldoZero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:instanciarContaComSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:setContaPoupancaSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:getContaBonificadaSaldoZero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:instanciarContaImpostoComSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:debitarContaException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:setContaBonificadaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:debitarConta()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:getContaImpostoSaldoZero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:getContaEspecialSaldoZero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:setContaEspecialCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaTest]/[method:debitarContaSaqueTotalException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:setContaImpostoCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:setContaEspecialSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:instanciarContaBonificadaComSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:setContaBonificadaSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:instanciarContaEspecialSemSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:setContaImpostoSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:setContaPoupancaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:getContaPoupancaSaldoZero()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:instanciarPoupancaComSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:debitarContaBonificadaException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:getContaEspecialCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:instanciarContaEspecialComSaldo()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:debitarContaImposto()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:debitarContaPoupanca()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:debitarContaBonificada()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:debitarDeContaEspecialSaldoTotal()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaBonificadaTest]/[method:getContaBonificadaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:getContaImpostoCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:debitarContaEspecial()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:debitarContaEspecialException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaEspecialTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaEspecialTest]/[method:instanciarContaEspecialComSaldoEChequeEspecial()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:getContaPoupancaCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:debitarValorTotalContaImposto()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.PoupancaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.PoupancaTest]/[method:debitarContaPoupancaException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.conta.ContaImpostoTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.conta.ContaImpostoTest]/[method:debitarContaImpostoException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:obterInstanciaFachada()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:cadastrarClienteArrayVazio()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:descadastrarClienteInexistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarClienteNaoExistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarClienteNaoExistenteArrayException()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarCliente()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:cadastrarClienteExistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:descadastrarClienteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:procurarClienteArrayVazio()] (2 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarClienteExistenteArray()] (0 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:atualizarClienteExistenteArrayException()] (1 ms)</li><li>br.ufpe.cin.residencia.banco.fachada.FachadaTest.[engine:junit-jupiter]/[class:br.ufpe.cin.residencia.banco.fachada.FachadaTest]/[method:descadastrarEProcurarClienteInexistenteArray()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.2
+
+</body>
+</html>
